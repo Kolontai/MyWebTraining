@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 <head lang="en">
     <link rel="stylesheet" type="text/css" href="index.css">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Web Training!</title>
 </head>
+
 <body>
     <h1>Hello World! I am VLAD!</h1>
     <h2>I should not write here! Whatever!</h2>
     <h3>DO IT!</h3>
+
+    <p id="text1" onclick="changeText()">I was here!</p>
 </body>
+
+<script>
+  function changeText() {
+    document.getElementById('text1').innerHTML="GoGoGoGo";
+  }
+
+
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+  {
+  $("#btn1").click(function(){
+    $("#box").animate({height:"3000px"});
+  });
+  $("#btn2").click(function(){
+    $("#box").animate({height:"100px"});
+  });
+});
+</script>
+</head>
+<body>
+
+<button id="btn1">Animate height</button>
+<button id="btn2">Reset height</button>
+<div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;">
+</div>
+
 </html>
